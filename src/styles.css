@@ -1,0 +1,104 @@
+body {
+  background-color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.3s;
+}
+
+body.dark {
+  background-color: #333;
+  color: white;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.game-board {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 2px solid #333;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: #ddd;
+}
+
+.status {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+button:active {
+  background-color: #222;
+}
+
+table {
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+thead {
+  background-color: #555;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.game-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
